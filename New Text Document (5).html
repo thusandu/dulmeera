@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulmeera Tour</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Header and Hero Section */
+        header {
+            position: fixed;
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.5em;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('https://ibb.co/9cSNn57') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0a0707;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Tour Details */
+        .tours {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .tour-card {
+            flex: 1;
+            min-width: 250px;
+            background-color: #00505e;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Booking Form */
+        .booking-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+        }
+
+        .booking-form input,
+        .booking-form select,
+        .booking-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .booking-form button {
+            background-color: #0c4652;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .booking-form button:hover {
+            background-color: #0a9396;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #005f73;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .tours {
+                flex-direction: column;
+            }
+
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>DULMEERA TOURS</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#tours">Tours</a></li>
+               
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div>
+            <h2>Discover the World with KDH Van Tour</h2>
+            <p>Comfort, style, and adventure all in one place. Your journey begins here!</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>OUR VEHICALS</h2>
+        <div class="gallery">
+            <img src="pexels-iakub-arifulin-205356454-11675420.jpg" alt="city tour">
+            <img src="Toyota-KDH-Price-in-Sri-Lanka.jpg" alt="Airport Tour">
+            <img src="pexels-kanishkaranasinghe-4169733.jpg" alt="round tour">
+        </div>
+    </section>
+
+    <!-- Tour Details Section -->
+    <section id="tours">
+        <h2>Our Tours</h2>
+        <div class="tours">
+            <div class="tour-card">
+                <h3>City Tour</h3>
+                <p></p>
+            </div>
+            <div class="tour-card">
+                <h3>Airport Tour</h3>
+                <p></p>
+            </div>
+            <div class="tour-card">
+                <h3>Round tour</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking">
+        <h2>Book Your Tour</h2>
+        <form class="booking-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <select required>
+                <option value="">Select a Tour</option>
+                <option value="city">City Tour</option>
+                <option value="Airport">Airport Tour</option>
+                <option value="Round">Round Tour</option>
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <p>Email          : info@kdhvantours.com</p>
+            <p>Phone number   : 0777964156</p>
+            <P>whatsapp number: 0777964156</P>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 KDH Van Tour. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
